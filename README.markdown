@@ -19,6 +19,12 @@ Then you can generate particules from any element
 
 This will generate 20 stars (the default particle sprite) from `#emitter`
 
+Demo
+----
+
+You can play with the plugin here http://jsfiddle.net/sEa4p/2/  
+_This can have some github raw files direct access issues_
+
 Options
 =======
 
