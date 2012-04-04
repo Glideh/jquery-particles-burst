@@ -22,8 +22,8 @@ This will generate 20 stars (the default particle sprite) from `#emitter`
 Demo
 ----
 
-You can play with the plugin here http://jsfiddle.net/sEa4p/3/  
-_This can have some github raw files direct access issues_
+You can play with the plugin [here](http://jsfiddle.net/sEa4p/3/)  
+_This can have some github raw files direct access [issues](https://github.com/jsfiddle/jsfiddle-docs-alpha/issues/95)_
 
 Options
 =======
