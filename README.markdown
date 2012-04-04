@@ -13,5 +13,5 @@ Then you can generate particules from any element
       $('#emitter').pburst('burst_part', 20);
     </script>
 
-This will generate 20 stars (the default particle sprite) from `#emitter`
+This will generate 20 stars (the default particle sprite) from #emitter
 
