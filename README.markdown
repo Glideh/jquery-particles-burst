@@ -27,7 +27,7 @@ particle
 
 _default: 'star.png'_
 
-Specify your images as particle
+Specify your image as particle
 
     $('#emitter').pburst({particle: 'your_sprite.png'});
 
