@@ -10,7 +10,7 @@
       return this;
     }
   , create_part: function () {
-      tmp = $('<img />').addClass('jquery-particle')
+      tmp = $('<img />').addClass('jquery-particle');
       tmp.attr('src', settings.particle);
       this.append(tmp);
       x = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
