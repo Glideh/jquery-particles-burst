@@ -1,3 +1,6 @@
+This plugin generates particules from an element.  
+Actually it allows images to appear, animate themself then disappear
+
 Installation
 ============
 
@@ -45,3 +48,19 @@ _default: 100_
 The move radius in pixel
 
     $('#emitter').pburst({partoffset: 200});
+
+Methods
+=======
+
+create_part
+-----------
+
+Make a particule appear, animate and disappear
+
+burst_part(number)
+------------------
+
+_parameters: number, the number of particules to burst_
+
+Create _number_ of particules by calling _create_part_
+
