@@ -49,7 +49,9 @@ _default: 'star.png'_
 
 Specify your image as particle
 
-    $('#emitter').pburst({particle: 'your_sprite.png'});
+```javascript
+$('#emitter').pburst({particle: 'your_sprite.png'});
+```
 
 partoffset
 ----------
@@ -58,7 +60,9 @@ _default: 100_
 
 The translation radius in pixel
 
-    $('#emitter').pburst({partoffset: 200});
+```javascript
+$('#emitter').pburst({partoffset: 200});
+```
 
 Methods
 =======
