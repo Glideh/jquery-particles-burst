@@ -1,5 +1,6 @@
 This plugin generates particules from an element.  
-Actually it allows images to appear, animate themself then disappear
+Images are appended to the DOM then fade in, animate randomly, fade out.  
+Multiple calls generate the particule effect.
 
 Installation
 ============
