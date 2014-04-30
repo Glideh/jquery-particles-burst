@@ -72,6 +72,10 @@ create_part
 
 Make a particle appear on the emitter, offsets in a random direction and disappear
 
+```javascript
+$('#emitter').pburst('create_part');
+```
+
 burst_part(number)
 ------------------
 
@@ -79,3 +83,6 @@ _parameters: number, the number of particles to burst_
 
 Create _number_ of particles by calling _create_part_
 
+```javascript
+$('#emitter').pburst('burst_part', 20);
+```
