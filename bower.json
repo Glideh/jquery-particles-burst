@@ -1,0 +1,28 @@
+{
+  "name": "jquery.particles.burst",
+  "main": "jquery.particles.burst.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Glideh/jquery.particles.burst",
+  "authors": [
+    "Pierre de LESPINAY <gprod.net+github@gmail.com>"
+  ],
+  "description": "Randomly creates particles from an element",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "particules"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
