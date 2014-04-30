@@ -1,7 +1,7 @@
 {
   "name": "jquery.particles.burst",
   "main": "jquery.particles.burst.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/Glideh/jquery.particles.burst",
   "authors": [
     "Pierre de LESPINAY <gprod.net+github@gmail.com>"
@@ -20,7 +20,10 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "README.*",
+    ".gitignore",
+    "bower.json"
   ],
   "dependencies": {
     "jquery": ">=1.5"

@@ -5,21 +5,31 @@ Multiple calls generate the particule effect.
 Installation
 ============
 
+Install the package with [Bower](http://bower.io/)
+
+```bash
+$ bower install jquery.particles.burst
+```
+
 Put the required resources in your header
 
-    <link rel="stylesheet" href="jquery.particles.burst.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script src="jquery.particles.burst.js"></script>
+```html
+<link rel="stylesheet" href="jquery.particles.burst.css" />
+<script src="bower/jquery.min.js"></script>
+<script src="bower/jquery.particles.burst.js"></script>
+```
 
 Usage
 =====
 
 Then you can generate particules from any element
 
-    <div id="emitter"></div>
-    <script>
-      $('#emitter').pburst('burst_part', 20);
-    </script>
+```html
+<div id="emitter"></div>
+<script>
+  $('#emitter').pburst('burst_part', 20);
+</script>
+```
 
 This will generate 20 stars (the default particle sprite) from `#emitter`
 
@@ -46,7 +56,7 @@ partoffset
 
 _default: 100_
 
-The move radius in pixel
+The translation radius in pixel
 
     $('#emitter').pburst({partoffset: 200});
 
@@ -56,12 +66,12 @@ Methods
 create_part
 -----------
 
-Make a particule appear, animate and disappear
+Make a particle appear on the emitter, offsets in a random direction and disappear
 
 burst_part(number)
 ------------------
 
-_parameters: number, the number of particules to burst_
+_parameters: number, the number of particles to burst_
 
-Create _number_ of particules by calling _create_part_
+Create _number_ of particles by calling _create_part_
 
