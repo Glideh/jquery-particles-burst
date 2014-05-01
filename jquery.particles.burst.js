@@ -2,6 +2,8 @@
     var settings = {
         particle: 'star.png'
       , partoffset: 100
+      , duration: 1000
+      , frequency: 200
     };
 
     var methods = {
@@ -18,7 +20,7 @@
             tmp.animate(
                 {'margin-top': x + 'px', 'margin-left': y + 'px', 'opacity': 1}
               , {
-                   'duration': Math.floor(Math.random() * 1000) + 1000
+                   'duration': Math.floor(Math.random() * 1000) + settings.duration
                  , 'complete': function () {
                        $(this).animate(
                            {'opacity': 0}
@@ -35,7 +37,7 @@
               methods['create_part'].apply($this);
               setTimeout(function () {
                   methods['burst_part'].apply($this, [--i])
-              }, Math.floor(Math.random() * 200));
+              }, Math.floor(Math.random() * settings.frequency));
           }
           return this;
         }
