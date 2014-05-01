@@ -36,7 +36,7 @@ This will generate 20 stars (the default particle sprite) from `#emitter`
 Demo
 ----
 
-You can play with the plugin [here](http://pburst.gprod.net)
+You can play with the plugin [here](http://pburst.gprod.net) (with the console)
 
 Options
 =======
