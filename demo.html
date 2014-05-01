@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link rel="stylesheet" href="jquery.particles.burst.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="jquery.particles.burst.js"></script>
+  <style>
+body {
+    background-color: #888;
+    font-family: sans;
+}
+#emitter {
+    text-align: center;
+    margin-top: 100px;
+}
+  </style>
+  <script>
+$(function () {
+    $('#emitter').pburst('burst_part', 20);
+});
+  </script>
+</head>
+<body>
+  <div id="emitter">Emitter</div>
+</body>
+</html>
