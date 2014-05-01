@@ -2,8 +2,11 @@ This plugin generates particules from an element.
 Images are appended to the DOM then fade in, animate randomly, fade out.  
 Multiple calls generate the particule effect.
 
-Installation
-============
+## Demo
+
+You can play with the plugin [here](http://pburst.gprod.net) (through the console)
+
+## Installation
 
 Install the package with [Bower](http://bower.io/)
 
@@ -19,8 +22,7 @@ Put the required resources in your header
 <script src="bower/jquery.particles.burst.js"></script>
 ```
 
-Usage
-=====
+## Usage
 
 Then you can generate particules from any element
 
@@ -33,16 +35,29 @@ Then you can generate particules from any element
 
 This will generate 20 stars (the default particle sprite) from `#emitter`
 
-Demo
-----
+## Methods
 
-You can play with the plugin [here](http://pburst.gprod.net) (through the console)
+### create_part
 
-Options
-=======
+Make a particle appear on the emitter, offsets in a random direction and disappear
 
-particle
---------
+```javascript
+$('#emitter').pburst('create_part');
+```
+
+### burst_part(number)
+
+_parameters: number, the number of particles to burst_
+
+Create _number_ of particles by calling _create_part_
+
+```javascript
+$('#emitter').pburst('burst_part', 20);
+```
+
+## Options
+
+### particle
 
 _default: 'star.png'_
 
@@ -52,36 +67,33 @@ Specify your image as particle
 $('#emitter').pburst({particle: 'your_sprite.png'});
 ```
 
-partoffset
-----------
+### partoffset
 
 _default: 100_
 
-The translation radius in pixel
+Maximum translation radius in pixel (randomized from 0)
 
 ```javascript
 $('#emitter').pburst({partoffset: 200});
 ```
 
-Methods
-=======
+### duration
 
-create_part
------------
+_default: 1000_
 
-Make a particle appear on the emitter, offsets in a random direction and disappear
+Maximum duration of the translation in milliseconds (randomized from 0)
 
 ```javascript
-$('#emitter').pburst('create_part');
+$('#emitter').pburst({duration: 2000});
 ```
 
-burst_part(number)
-------------------
+### frequency
 
-_parameters: number, the number of particles to burst_
+_default: 200_
 
-Create _number_ of particles by calling _create_part_
+Maximum duration between each particle in milliseconds (randomized from 0)
 
 ```javascript
-$('#emitter').pburst('burst_part', 20);
+$('#emitter').pburst({duration: 500});
 ```
+
