@@ -13,16 +13,25 @@ body {
 }
 #emitter {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
   </style>
   <script>
 $(function () {
-    $('#emitter').pburst('burst_part', 20);
+    $('#create_part').click(function () {
+        $('#emitter').pburst('create_part');
+    });
+    $('#burst_part').click(function () {
+        $('#emitter').pburst('burst_part', $('#part_nb').val());
+    });
 });
   </script>
 </head>
 <body>
-  <div id="emitter">Emitter</div>
+    <div id="emitter">
+        <button id="create_part">Create one</button>
+        <button id="burst_part">Burst</button>
+        <input id="part_nb" type="number" value="20" size="3" />
+    </div>
 </body>
 </html>
