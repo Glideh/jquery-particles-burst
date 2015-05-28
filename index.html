@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Test</title>
-  <link rel="stylesheet" href="jquery.particles.burst.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script src="jquery.particles.burst.js"></script>
-  <style>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="jquery.particles.burst.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery.animate-enhanced/jquery.animate-enhanced.min.js"></script>
+    <script src="jquery.particles.burst.js"></script>
+    <style>
 body {
     background-color: #888;
-    font-family: sans;
+    font-family: "Century Gothic", Arial, sans-serif;
 }
-#emitter {
+.container {
     text-align: center;
     margin-top: 200px;
 }
-  </style>
-  <script>
+    </style>
+    <script>
 $(function () {
     $('#create_part').click(function () {
         $('#emitter').pburst('create_part');
@@ -25,13 +26,14 @@ $(function () {
         $('#emitter').pburst('burst_part', $('#part_nb').val());
     });
 });
-  </script>
+    </script>
 </head>
 <body>
-    <div id="emitter">
+    <div class="container">
         <button id="create_part">Create one</button>
         <button id="burst_part">Burst</button>
         <input id="part_nb" type="number" value="20" size="3" />
+        <div id="emitter" class="jquery-particule-emitter"></div>
     </div>
 </body>
 </html>

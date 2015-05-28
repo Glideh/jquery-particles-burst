@@ -1,5 +1,9 @@
-.jquery-particle {
-  position: absolute;
-  opacity: 0;
+.jquery-particule-emitter {
+    position: relative;
+    display: inline;
 }
 
+.jquery-particle {
+    position: absolute;
+    opacity: 0;
+}

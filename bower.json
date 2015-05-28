@@ -26,6 +26,7 @@
     "bower.json"
   ],
   "dependencies": {
-    "jquery": ">=1.5"
+    "jquery": ">=1.5",
+    "jquery.animate-enhanced": "~1.1.0"
   }
 }

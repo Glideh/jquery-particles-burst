@@ -12,19 +12,21 @@
             return this;
         }
       , create_part: function () {
-            tmp = $('<img />').addClass('jquery-particle');
-            tmp.attr('src', settings.particle);
-            this.append(tmp);
-            x = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
-            y = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
-            tmp.animate(
-                {'margin-top': x + 'px', 'margin-left': y + 'px', 'opacity': 1}
+            var particle = $('<img />').addClass('jquery-particle');
+            particle.attr('src', settings.particle);
+            this.append(particle);
+            var x = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
+            var y = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
+            particle.animate(
+                {'top': x + 'px', 'left': y + 'px', 'opacity': 1}
               , {
                    'duration': Math.floor(Math.random() * 1000) + settings.duration
                  , 'complete': function () {
                        $(this).animate(
                            {'opacity': 0}
-                         , {'complete': function () { $(this).remove(); }}
+                         , {'complete': function () {
+                               $(this).remove();
+                           }}
                        )
                    }
                 }
@@ -33,10 +35,10 @@
         }
       , burst_part: function (i) {
           if (i > 0) {
-              $this = this;
-              methods['create_part'].apply($this);
+              var emiter = this;
+              methods['create_part'].apply(emiter);
               setTimeout(function () {
-                  methods['burst_part'].apply($this, [--i])
+                  methods['burst_part'].apply(emiter, [--i])
               }, Math.floor(Math.random() * settings.frequency));
           }
           return this;
