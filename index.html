@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Test</title>
     <link rel="stylesheet" href="jquery.particles.burst.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery.animate-enhanced/jquery.animate-enhanced.min.js"></script>
     <script src="jquery.particles.burst.js"></script>
@@ -13,27 +14,61 @@ body {
     font-family: "Century Gothic", Arial, sans-serif;
 }
 .container {
-    text-align: center;
     margin-top: 200px;
+}
+.control-label {
+    color: #eee;
 }
     </style>
     <script>
 $(function () {
-    $('#create_part').click(function () {
-        $('#emitter').pburst('create_part');
-    });
     $('#burst_part').click(function () {
-        $('#emitter').pburst('burst_part', $('#part_nb').val());
+        $(this).pburst({
+            partoffset: parseInt($('#partoffset').val()),
+            duration: parseInt($('#duration').val()),
+            frequency: parseInt($('#frequency').val())
+        }).pburst('burst_part', parseInt($('#part_nb').val()));
     });
 });
     </script>
 </head>
 <body>
     <div class="container">
-        <button id="create_part">Create one</button>
-        <button id="burst_part">Burst</button>
-        <input id="part_nb" type="number" value="20" size="3" />
-        <div id="emitter" class="jquery-particule-emitter"></div>
+        <div class="row">
+        <form class="form-horizontal col-sm-offset-4 col-sm-4">
+            <div class="form-group">
+                <label class="control-label col-xs-6" for="part_nb">Particules</label>
+                <div class="col-xs-6">
+                    <input class="form-control" id="part_nb" type="number" value="60" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-6" for="partoffset">Offset</label>
+                <div class="col-xs-6">
+                    <input class="form-control" id="partoffset" type="number" value="200" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-6" for="duration">Duration</label>
+                <div class="col-xs-6">
+                    <input class="form-control" id="duration" type="number" value="500" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-6" for="frequency">Frequency</label>
+                <div class="col-xs-6">
+                    <input class="form-control" id="frequency" type="number" value="100" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-6 text-right">
+                </div>
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-primary jquery-particule-emitter" id="burst_part">Burst</button>
+                </div>
+            </div>
+        </form>
+        </div>
     </div>
 </body>
 </html>

@@ -15,8 +15,10 @@
             var particle = $('<img />').addClass('jquery-particle');
             particle.attr('src', settings.particle);
             this.append(particle);
-            var x = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
-            var y = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
+            var distance = Math.floor(Math.random() * settings.partoffset * 2) - settings.partoffset;
+            var angle = Math.floor(Math.random() * 360);
+            var x = distance * Math.cos(angle);
+            var y = distance * Math.sin(angle);
             particle.animate(
                 {'top': x + 'px', 'left': y + 'px', 'opacity': 1}
               , {
