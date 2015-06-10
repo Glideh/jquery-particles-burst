@@ -1,9 +1,9 @@
 (function($){
     var settings = {
         particle: 'star.png'
-      , partoffset: 100
+      , partoffset: 150
       , duration: 1000
-      , frequency: 200
+      , frequency: 100
     };
 
     var methods = {
