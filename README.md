@@ -12,15 +12,15 @@ You can play with the plugin [here](http://pburst.gprod.net)
 Install the package with [Bower](http://bower.io/)
 
 ```bash
-$ bower install jquery.particles.burst
+$ bower install jquery-particles-burst
 ```
 
 Put the required resources in your header
 
 ```html
-<link rel="stylesheet" href="bower/jquery.particles.burst.css" />
+<link rel="stylesheet" href="bower/jquery-particles-burst.css" />
 <script src="bower/jquery.min.js"></script>
-<script src="bower/jquery.particles.burst.js"></script>
+<script src="bower/jquery-particles-burst.js"></script>
 ```
 
 ## Usage
