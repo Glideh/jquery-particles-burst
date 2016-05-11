@@ -70,7 +70,7 @@ $('#emitter').pburst({particle: 'your_sprite.png'});
 
 ### partoffset
 
-_default: 100_
+_default: 150_
 
 Maximum translation radius in pixel (randomized from 0)
 
@@ -90,7 +90,7 @@ $('#emitter').pburst({duration: 2000});
 
 ### frequency
 
-_default: 200_
+_default: 100_
 
 Maximum duration between each particle in milliseconds (randomized from 0)
 

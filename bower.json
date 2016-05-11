@@ -1,8 +1,8 @@
 {
-  "name": "jquery.particles.burst",
-  "main": "jquery.particles.burst.js",
+  "name": "jquery-particles-burst",
+  "main": "jquery-particles-burst.js",
   "version": "0.0.3",
-  "homepage": "https://github.com/Glideh/jquery.particles.burst",
+  "homepage": "https://github.com/Glideh/jquery-particles-burst",
   "authors": [
     "Pierre de LESPINAY <gprod.net+github@gmail.com>"
   ],
