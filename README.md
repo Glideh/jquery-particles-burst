@@ -40,7 +40,7 @@ This will generate 20 stars (the default particle sprite) from `#emitter`
 
 ### create_part
 
-Make a particle appear on the emitter, offsets in a random direction and disappear
+Makes a particle appear on the emitter, offset in a random direction and disappear
 
 ```javascript
 $('#emitter').pburst('create_part');
@@ -50,7 +50,7 @@ $('#emitter').pburst('create_part');
 
 _parameters: number, the number of particles to burst_
 
-Create _number_ of particles by calling _create_part_
+Creates _number_ of particles by calling _create_part_
 
 ```javascript
 $('#emitter').pburst('burst_part', 20);
