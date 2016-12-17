@@ -12,15 +12,15 @@ You can play with the plugin [here](http://pburst.gprod.net)
 Install the package with [Bower](http://bower.io/)
 
 ```bash
-$ bower install jquery.particles.burst
+$ bower install jquery-particles-burst
 ```
 
 Put the required resources in your header
 
 ```html
-<link rel="stylesheet" href="bower/jquery.particles.burst.css" />
+<link rel="stylesheet" href="bower/jquery-particles-burst.css" />
 <script src="bower/jquery.min.js"></script>
-<script src="bower/jquery.particles.burst.js"></script>
+<script src="bower/jquery-particles-burst.js"></script>
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ This will generate 20 stars (the default particle sprite) from `#emitter`
 
 ### create_part
 
-Make a particle appear on the emitter, offsets in a random direction and disappear
+Makes a particle appear on the emitter, offset in a random direction and disappear
 
 ```javascript
 $('#emitter').pburst('create_part');
@@ -50,7 +50,7 @@ $('#emitter').pburst('create_part');
 
 _parameters: number, the number of particles to burst_
 
-Create _number_ of particles by calling _create_part_
+Creates _number_ of particles by calling _create_part_
 
 ```javascript
 $('#emitter').pburst('burst_part', 20);
@@ -70,7 +70,7 @@ $('#emitter').pburst({particle: 'your_sprite.png'});
 
 ### partoffset
 
-_default: 100_
+_default: 150_
 
 Maximum translation radius in pixel (randomized from 0)
 
@@ -90,7 +90,7 @@ $('#emitter').pburst({duration: 2000});
 
 ### frequency
 
-_default: 200_
+_default: 100_
 
 Maximum duration between each particle in milliseconds (randomized from 0)
 
