@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "jquery": ">=1.5",
-    "jquery.animate-enhanced": "~1.1.0"
+    "jquery.animate-enhanced": "~1.1.0",
+    "bootstrap": "^3.3.7"
   }
 }

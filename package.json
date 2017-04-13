@@ -1,0 +1,28 @@
+{
+  "name": "jquery-particles-burst",
+  "version": "0.1.2",
+  "description": "Randomly creates particles from an element",
+  "main": "jquery-particles-burst.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glideh/jquery-particles-burst.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "particules"
+  ],
+  "author": "Pierre de LESPINAY <gprod.net@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Glideh/jquery-particles-burst/issues"
+  },
+  "homepage": "https://github.com/Glideh/jquery-particles-burst#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-minify": "0.0.15"
+  }
+}

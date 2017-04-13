@@ -3,11 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Test</title>
-    <link rel="stylesheet" href="jquery-particles-burst.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery.animate-enhanced/jquery.animate-enhanced.min.js"></script>
-    <script src="jquery-particles-burst.js"></script>
+    <link rel="stylesheet" href="lib/jquery-particles-burst.css">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css"/>
     <style>
 body {
     background-color: #444;
@@ -20,17 +17,6 @@ body {
     color: #eee;
 }
     </style>
-    <script>
-$(function () {
-    $('#burst_part').click(function () {
-        $(this).pburst({
-            partoffset: parseInt($('#partoffset').val()),
-            duration: parseInt($('#duration').val()),
-            frequency: parseInt($('#frequency').val())
-        }).pburst('burst_part', parseInt($('#part_nb').val()));
-    });
-});
-    </script>
 </head>
 <body>
     <div class="container">
@@ -73,5 +59,19 @@ $(function () {
         <div class="col-sm-offset-6 col-sm-6 jquery-particule-emitter" ></div>
         </div>
     </div>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/jquery.animate-enhanced.min.js"></script>
+    <script src="lib/jquery-particles-burst.js"></script>
+    <script>
+        $(function () {
+            $('#burst_part').click(function () {
+                $(this).pburst({
+                    partoffset: parseInt($('#partoffset').val()),
+                    duration: parseInt($('#duration').val()),
+                    frequency: parseInt($('#frequency').val())
+                }).pburst('burst_part', parseInt($('#part_nb').val()));
+            });
+        });
+    </script>
 </body>
 </html>
