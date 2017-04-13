@@ -1,6 +1,6 @@
 {
   "name": "jquery-particles-burst",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Randomly creates particles from an element",
   "main": "jquery-particles-burst.js",
   "scripts": {
