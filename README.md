@@ -15,12 +15,14 @@ Install the package with [Bower](http://bower.io/)
 $ bower install jquery-particles-burst
 ```
 
+If you don't use Bower, simply copy the files from `dist/`
+
 Include the required resources in your html
 
 ```html
 <link rel="stylesheet" href="jquery-particles-burst.css" />
 <script src="vendors/jquery.min.js"></script>
-<script src="vendors/jquery-particles-burst.js"></script>
+<script src="vendors/jquery-particles-burst.min.js"></script>
 ```
 
 ## Usage

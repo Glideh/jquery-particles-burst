@@ -16,7 +16,10 @@ gulp.task('minify', function () {
     return gulp
         .src('lib/*.js')
         .pipe(minify({
-            noSource: true
+            noSource: true,
+            ext: {
+                min: '.min.js'
+            }
         }))
         .pipe(gulp.dest('dist'))
     ;
