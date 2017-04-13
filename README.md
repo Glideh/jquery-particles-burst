@@ -5,7 +5,7 @@ Multiple calls generate the particule effect.
 
 ## Demo
 
-You can play with the plugin [here](http://pburst.gprod.net)
+You can play with the plugin [here](https://pburst.gprod.net)
 
 ## Installation
 
