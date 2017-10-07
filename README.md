@@ -1,3 +1,5 @@
+# jQuery Particules Burst
+
 <img align="right" width="243" height="221" src="pburst_screenshot.png" alt="Screenshot">
 This plugin generates particules from an element.  
 Images are appended to the DOM then fade in, animate randomly, fade out.  

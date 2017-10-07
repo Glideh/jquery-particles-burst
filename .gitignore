@@ -3,3 +3,4 @@
 .idea
 bower_components
 node_modules
+docker-compose.yml
